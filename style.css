@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: rgb(235, 182, 117);
+  /* text-shadow: 1px 1px rgb(3, 22, 22); */
+}
+
+.radial-gradient {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  /*Fallback if gradeints don't work */
+  background: #9b59b6;
+  /*Linear gradient... */
+  background: radial-gradient(at center, #3498db, #9b59b6);
+}
+
+header {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0) 10%,
+    rgb(240, 197, 117, 0.5) 20%,
+    rgb(240, 197, 117) 50%,
+    rgb(240, 197, 117, 0.5) 80%,
+    rgba(0, 0, 255, 0) 90%
+  );
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+ol {
+  font-weight: 700;
+  color: rgb(5, 5, 0);
+  font-size: 20px;
+  margin-top: 20px;
+  width: 70vw;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}

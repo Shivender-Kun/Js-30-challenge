@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>JS 30 challenges</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      Link to all JS 30 challenges :-
-      <ol>
-        <li>
-          <a href="01 - JavaScript Drum Kit">01 - JavaScript Drum Kit</a>
-        </li>
-        <!-- <li>
+    <div class="radial-gradient">
+      <header>
+        I will be uploading link to all the challenges completed by me here!
+      </header>
+      <div>
+        <h1>Link to all JS 30 challenges :-</h1>
+        <ol>
+          <li>
+            <a href="01 - JavaScript Drum Kit">JavaScript Drum Kit</a>
+          </li>
+          <!-- <li>
           <a href="02 - JS and CSS Clock\index-FINISHED.html"
-            >02 - JS and CSS Clock</a
+            >JS and CSS Clock</a
           >
         </li>
-        <li><a href="03 - CSS Variables">03 - CSS Variables</a></li>
-        <li><a href="04 - Array Cardio Day 1">04 - Array Cardio Day 1</a></li>
-        <li><a href="05 - Flex Panel Gallery">05 - Flex Panel Gallery</a></li>
+        <li><a href="CSS Variables">03 - CSS Variables</a></li>
+        <li><a href="Array Cardio Day 1">04 - Array Cardio Day 1</a></li>
+        <li><a href="05 - Flex Panel Gallery">Flex Panel Gallery</a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
@@ -45,7 +49,27 @@
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li> -->
-      </ol>
+        </ol>
+      </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).mousemove(function (event) {
+        windowWidth = $(window).width();
+        windowHeight = $(window).height();
+
+        mouseXpercentage = Math.round((event.pageX / windowWidth) * 100);
+        mouseYpercentage = Math.round((event.pageY / windowHeight) * 100);
+
+        $(".radial-gradient").css(
+          "background",
+          "radial-gradient(at " +
+            mouseXpercentage +
+            "% " +
+            mouseYpercentage +
+            "%, #3498db, #9b59b6)"
+        );
+      });
+    </script>
   </body>
 </html>
