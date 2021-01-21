@@ -67,14 +67,21 @@ a {
   }
 
   header {
-    font-size: 1.3rem;
+    font-size: 1rem;
     background: linear-gradient(
       90deg,
-      rgba(0, 0, 255, 0) 2%,
-      rgb(240, 197, 117, 0.5) 5%,
+      rgba(0, 0, 255, 0) 1%,
+      rgba(240, 197, 117, 0.603) 5%,
       rgb(240, 197, 117) 50%,
-      rgb(240, 197, 117, 0.5) 95%,
-      rgba(0, 0, 255, 0) 98%
+      rgba(240, 197, 117, 0.658) 95%,
+      rgba(0, 0, 255, 0) 99%
     );
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 1rem;
+    background: rgba(252, 202, 109, 0.973);
   }
 }
