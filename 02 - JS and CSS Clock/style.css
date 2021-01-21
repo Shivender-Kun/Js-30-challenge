@@ -2,7 +2,7 @@ html,
 body {
   background-color: #240f52;
   height: 100%;
-
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ body {
 .outer-ring {
   position: absolute;
 
-  left: calc(50% - 150px);
+  left: calc(50% - 30vw);
   height: 50vw;
   width: 50vw;
 
@@ -45,13 +45,13 @@ body {
 
 .inner-ring {
   position: absolute;
-  top: calc(50% - 222px);
-  left: calc(50% - 135px);
+  top: calc(50% - 23.5vw);
+  left: calc(50% - 28.5vw);
   height: 47vw;
   width: 47vw;
   border: 3px solid black;
 
-  background-image: linear-gradient(0deg, #5227fce5, #35c00bad);
+  background-image: linear-gradient(0deg, #5227fc, #35c00b);
   border-radius: 50%;
 }
 
@@ -73,7 +73,7 @@ body {
   height: 6px;
   background: rgb(238, 232, 232);
   position: absolute;
-  top: 49%;
+  top: 49.5%;
   border-radius: 50px;
   transform-origin: 100%;
   transform: rotate(90deg);
