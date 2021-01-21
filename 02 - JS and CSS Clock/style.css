@@ -1,43 +1,82 @@
-html {
-  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
-  background-size: cover;
+html,
+body {
+  background-color: #240f52;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: "helvetica neue";
   text-align: center;
+
   font-size: 10px;
-}
-
-body {
   margin: 0;
-  font-size: 2rem;
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
 }
 
-.clock {
-  width: 30rem;
-  height: 30rem;
-  border: 20px solid white;
+.center {
+  margin: 0 auto;
+}
+
+.outer-ring {
+  position: absolute;
+
+  left: calc(50% - 150px);
+  height: 50vw;
+  width: 50vw;
+
+  background-image: linear-gradient(
+    135deg,
+    #feed07 0%,
+    #fe6a50 5%,
+    #ed00aa 15%,
+    #2fe3fe 50%,
+    #8900ff 100%
+  );
+
   border-radius: 50%;
-  margin: 50px auto;
-  position: relative;
-  padding: 2rem;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
-    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
+
+  /*  Rotate  */
+  animation-duration: 2s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+}
+
+.inner-ring {
+  position: absolute;
+  top: calc(50% - 222px);
+  left: calc(50% - 135px);
+  height: 47vw;
+  width: 47vw;
+  border: 3px solid black;
+
+  background-image: linear-gradient(0deg, #5227fce5, #35c00bad);
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .clock-face {
-  position: relative;
-  width: 100%;
-  height: 100%;
   transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: rgb(238, 232, 232);
   position: absolute;
-  top: 50%;
+  top: 49%;
+  border-radius: 50px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
