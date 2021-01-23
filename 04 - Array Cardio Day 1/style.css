@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: red;
+  overflow: hidden;
+  background-image: linear-gradient(
+    55deg,
+    rgb(0, 255, 55) 10%,
+    rgb(0, 9, 128) 90%
+  );
+  color: rgb(245, 155, 39);
+  font-size: larger;
+}
+
+div {
+  height: 100vh;
+  background: rgba(14, 12, 10, 0.363);
+  text-align: center;
+}
+
+h1 {
+  padding-top: 40%;
+  text-shadow: 2px 2px black;
+}
