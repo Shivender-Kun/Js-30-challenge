@@ -26,7 +26,7 @@ input {
 }
 
 img {
-  max-width: 100%;
+  max-width: 80vw;
   padding: var(--spacing);
   background-color: var(--color);
   filter: blur(var(--blur));
